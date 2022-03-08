@@ -23,7 +23,7 @@ block content
                     div.helper-text Must be 8-20 characters long.
                 div.input-container
                     label(for="role").form-label Role
-                    input(name="role" id="role")
+                    select(name="role" id="role")
                         each role in roles
-                            option(value=role.id) #(role.name}
+                            option(value=role.id) #{role.name}
                 button.button.primary(type="submit") Register
